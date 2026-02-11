@@ -4,16 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Revisão HTML e CSS</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        p { 
+            color: red;
+        }
+
+        #nome {
+            color: blue;
+        }
+        .titulos {
+            color: magenta;
+        }
+
+    </style>
 </head>
 <header>
     <nav></nav>
 </header>
 <body>
     <main>
-    <h1>cabeçalho nivel 1</h1>
-    <h7>cabeçalho nivel 7</h7>
+    <h1 class="titulos">cabeçalho nivel 1</h1>
+    <h7 class="titulos">cabeçalho nivel 7</h7>
     <p>este é um parágrafo</p>
-    <a href="www.google.com" target="_blank">pagina do google</a>
+    <a href="https://www.google.com/webhp?hl=pt-BR&sa=X&ved=2ahUKEwjdorvxmNCSAxUPCbkGHe4GDRYQPHoECAUQBQ&zx=1770770160066&no_sw_cr=1" target="_blank">pagina do google</a>
     <ol>
         <li>um</li>
         <li>dois</li>
@@ -28,14 +44,14 @@
     <table>
         <thead>
             <tr>
-                <th>coluna1</th>
-                <th>coluna1</th>
+                <th>coluna 1</th>
+                <th>coluna 2</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>Valor 1</td>
-                <td>Valor 1</td>
+                <td>Valor 2</td>
+                <td>Valor 3</td>
             </tr>
         </tbody>
         <tfoot>
@@ -48,9 +64,10 @@
         <label for="nome">Informe seu nome:</label>
         <input type="text" id="nome" nome="nome">
         <label for="sexo">Selecione o sexo:</label>
-        <input id="sexo" nome="sexo">
+        <select name="sexo" id="sexo">
         <option value="F">Feminino</option>
         <option value="M">Masculino</option>
+        </select>
          <label for="obs">Observação:</label>
          <textarea id="obs" name="obs"></textarea>
          <button type="submit">
