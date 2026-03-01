@@ -15,7 +15,7 @@
               <input type="number" id="capital" name="capital" class="form-control" step="0.01" required="">
             </div><div class="mb-3">
               <label for="juros" class="form-label">taxa de juros em %  com "." no lugar de ","</label>
-              <input type="number" id="juros" name="juros" class="form-control"  step="0.01"required="">
+              <input type="number" id="juros" name="juros" class="form-control"  step="0.01" required="">
             </div><div class="mb-3">
               <label for="periodo" class="form-label">informe o periodo</label>
               <input type="number" id="periodo" name="periodo" class="form-control" required="">
