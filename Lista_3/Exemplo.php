@@ -48,6 +48,10 @@
                 echo "<p>Sinal invalido</p>";
                 break;
         }    
+        for($i=1; $i<=10; $i++){
+            $resultado = $valor * $i;
+            echo "<p> $valor * $i = $resultado </p>";
+        }
 
     }
 
