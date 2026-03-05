@@ -36,13 +36,19 @@
 </form>
 <?php
     if($_SERVER["REQUEST_METHOD"] == "POST"){
-        $valor1 =$_POST["1valor"];
-        $valor2 =$_POST["2valor"];
-        $valor3 =$_POST["3valor"];
-        $valor4 =$_POST["4valor"];
-        $valor5 =$_POST["5valor"];
-        $valor6 =$_POST["6valor"];
-        $valor7 =$_POST["7valor"];
+      $valores=
+      [
+        $valor1 = $_POST["1valor"],
+        $valor2 = $_POST["2valor"],
+        $valor3 = $_POST["3valor"],
+        $valor4 = $_POST["4valor"],
+        $valor5 = $_POST["5valor"],
+        $valor6 = $_POST["6valor"],
+        $valor7 = $_POST["7valor"]
+      ];
+      $menorvalo = men("$valores");
+      $posicao = array_search($menorvalo, $valores) + 1;
+      echo "<p>O menor valor é $menorvalo que esta na posição $posicao</p>";
 
     }
 
