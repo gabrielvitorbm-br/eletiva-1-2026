@@ -18,7 +18,7 @@
               <input type="number" id="2valor" name="2valor" class="form-control" required="">
             </div><div class="mb-3">
               <label for="3valor" class="form-label">infome o terceiro valor</label>
-              <input type="text" id="3valor" name="3valor" class="form-control" required="">
+              <input type="number" id="3valor" name="3valor" class="form-control" required="">
             </div><div class="mb-3">
               <label for="4valor" class="form-label">informe o quarto valor</label>
               <input type="number" id="4valor" name="4valor" class="form-control" required="">
@@ -46,7 +46,7 @@
         $valor6 = $_POST["6valor"],
         $valor7 = $_POST["7valor"]
       ];
-      $menorvalo = men("$valores");
+      $menorvalo = min($valores);
       $posicao = array_search($menorvalo, $valores) + 1;
       echo "<p>O menor valor é $menorvalo que esta na posição $posicao</p>";
 
