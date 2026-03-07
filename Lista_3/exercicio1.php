@@ -36,22 +36,45 @@
 </form>
 <?php
     if($_SERVER["REQUEST_METHOD"] == "POST"){
-      $valores=
-      [
-        $valor1 = $_POST["1valor"],
-        $valor2 = $_POST["2valor"],
-        $valor3 = $_POST["3valor"],
-        $valor4 = $_POST["4valor"],
-        $valor5 = $_POST["5valor"],
-        $valor6 = $_POST["6valor"],
-        $valor7 = $_POST["7valor"]
-      ];
-      $menorvalo = min($valores);
-      $posicao = array_search($menorvalo, $valores) + 1;
-      echo "<p>O menor valor é $menorvalo que esta na posição $posicao</p>";
+        
+        $valor1 = $_POST["1valor"];
+        $valor2 = $_POST["2valor"];
+        $valor3 = $_POST["3valor"];
+        $valor4 = $_POST["4valor"];
+        $valor5 = $_POST["5valor"];
+        $valor6 = $_POST["6valor"];
+        $valor7 = $_POST["7valor"];
+      
+      $menor = $valor1;
+      $posicao = "Posição 1";
 
+      if($menor > $valor2){
+        $menor = $valor2;
+        $posicao = "Posição 2";
+      }
+      if($menor > $valor3){
+        $menor = $valor3;
+        $posicao = "Posição 3";
+      }
+      if($menor > $valor4){
+        $menor = $valor4;
+        $posicao = "Posição 4";
+      }
+      if($menor > $valor5){
+        $menor = $valor5;
+        $posicao = "Posição 5";
+      }
+      if($menor > $valor6){
+        $menor = $valor6;
+        $posicao = "Posição 6";
+      }
+      if($menor > $valor7){
+        $menor = $valor7;
+        $posicao = "Posição 7";
+      }
+      
+     
     }
-
 ?>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 </div>
